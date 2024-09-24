@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+
+- story: Ask for sales events
+  steps:
+  - intent: ask_sales_events
+  - action: action_fetch_sales_events
+
+- story: Ask for sales events current
+  steps:
+  - intent: ask_sales_events_current
+  - action: action_fetch_sales_events_current
+
+- story: Ask for sales events upcoming
+  steps:
+  - intent: ask_sales_events_upcoming
+  - action: action_fetch_sales_events_upcoming
+
+- story: Ask for products current
+  steps:
+  - intent: ask_products_current
+  - action: action_fetch_products_current
+
+- story: Ask for products upcoming
+  steps:
+  - intent: ask_products_upcoming
+  - action: action_fetch_products_upcoming
+
+- story: Ask for sale by id
+  steps:
+  - intent: get_event_by_id
+    entities:
+      - event_id: "1"
+  - action: action_fetch_sales_event_by_id

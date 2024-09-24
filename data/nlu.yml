@@ -1,0 +1,46 @@
+version: "3.1"
+
+nlu:
+
+
+- intent: ask_sales_events
+  examples: |
+    - có tất cả những sự kiện sale nào?
+    - cho tôi biết các sự kiện sale của hệ thống
+    - có sự kiện sale nào?
+    - hãy cho tôi biết về các sự kiện khuyến mãi
+
+- intent: ask_sales_events_current
+  examples: |
+    - có tất cả những sự kiện sale nào hiện tại?
+    - cho tôi biết các sự kiện sale hiện tại của hệ thống
+    - có sự kiện sale hiện tại nào?
+    - hãy cho tôi biết về các sự kiện khuyến mãi hiện tại
+
+- intent: ask_sales_events_upcoming
+  examples: |
+    - có tất cả những sự kiện sale nào sắp tới?
+    - cho tôi biết các sự kiện sale sắp tới của hệ thống
+    - có sự kiện sale sắp tới nào?
+    - hãy cho tôi biết về các sự kiện khuyến mãi sắp tới
+
+- intent: ask_products_current
+  examples: |
+    - có những sản phẩm sale nào hiện tại?
+    - có những sản phẩm nào hiện hiện đang?
+    - cho tôi biết các sản phẩm sale hiện tại của hệ thống
+    - có sản phẩm sale hiện tại nào?
+    - hãy cho tôi biết về các sản phẩm khuyến mãi hiện tại
+
+- intent: ask_products_upcoming
+  examples: |
+    - có tất cả những sản phẩm sale nào sắp tới?
+    - cho tôi biết các sản phẩm sale sắp tới của hệ thống
+    - có sản phẩm sale sắp tới nào?
+    - hãy cho tôi biết về các sản phẩm khuyến mãi sắp tới
+
+- intent: get_event_by_id
+  examples: |
+    - Tìm sự kiện với mã [1](event_id)
+    - Hiển thị sự kiện với id [2](event_id)
+    - Tôi muốn biết chi tiết sự kiện [3](event_id)

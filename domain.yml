@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - ask_sales_events
+  - ask_sales_events_current
+  - ask_sales_events_upcoming
+  - ask_products_current
+  - ask_products_upcoming
+  - get_event_by_id:
+      use_entities: 
+        - event_id
+entities:
+  - event_id
+
+slots:
+  event_id:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: event_id
+
+actions:
+  - action_fetch_sales_events
+  - action_fetch_sales_events_current
+  - action_fetch_sales_events_upcoming
+  - action_fetch_products_current
+  - action_fetch_products_upcoming
+  - action_fetch_sales_event_by_id
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
