@@ -1,7 +1,5 @@
 version: "3.1"
-
 nlu:
-
 
 - intent: ask_sales_events
   examples: |
@@ -13,6 +11,8 @@ nlu:
 - intent: ask_sales_events_current
   examples: |
     - có tất cả những sự kiện sale nào hiện tại?
+    - có tất cả những sự kiện sale nào đang diễn ra?
+    - có tất cả những sự kiện sale nào đang có?
     - cho tôi biết các sự kiện sale hiện tại của hệ thống
     - có sự kiện sale hiện tại nào?
     - hãy cho tôi biết về các sự kiện khuyến mãi hiện tại
@@ -27,7 +27,8 @@ nlu:
 - intent: ask_products_current
   examples: |
     - có những sản phẩm sale nào hiện tại?
-    - có những sản phẩm nào hiện hiện đang?
+    - có những sản phẩm khuyến mãi nào đang diễn ra?
+    - có những sản phẩm nào hiện đang khuyến mãi?
     - cho tôi biết các sản phẩm sale hiện tại của hệ thống
     - có sản phẩm sale hiện tại nào?
     - hãy cho tôi biết về các sản phẩm khuyến mãi hiện tại
@@ -44,3 +45,37 @@ nlu:
     - Tìm sự kiện với mã [1](event_id)
     - Hiển thị sự kiện với id [2](event_id)
     - Tôi muốn biết chi tiết sự kiện [3](event_id)
+
+- intent: greet
+  examples: |
+    - Xin chào
+    - Chào bạn
+    - Hello
+    - Hi
+    - Chào buổi sáng
+    - Chào buổi tối
+
+- intent: goodbye
+  examples: |
+    - Tạm biệt
+    - Hẹn gặp lại
+    - Goodbye
+    - Bye
+    - Chúc bạn một ngày tốt lành
+    - Tạm biệt, hẹn gặp lại lần sau
+
+- intent: ask_about_system
+  examples: |
+    - Hệ thống của bạn do ai tạo ra?
+    - Bạn có thể nói cho tôi biết hệ thống này của ai?
+    - Ai làm ra dự án này vậy?
+    - Hệ thống này của ai?
+    - Ứng dụng này của ai?
+
+- intent: ask_how_to_buy
+  examples: |
+    - Làm sao để mua hàng?
+    - Tôi cần phải làm gì để đặt hàng?
+    - Bạn có thể hướng dẫn tôi cách mua sản phẩm không?
+    - Tôi muốn mua sản phẩm này, làm thế nào?
+    - Các bước để mua hàng là gì?

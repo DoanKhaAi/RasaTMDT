@@ -17,9 +17,9 @@ class ActionFetchSalesEvents(Action):
         if response.status_code == 200:
           events = response.json().get('data', [])
           if events:
-              message = "Tất cả các sự kiện sale: "
+              message = "Tất cả các sự kiện sale:"
               for event in events:
-                  message += f"id: {event['id']} - {event['name']} - {event['description']}"
+                  message += f" Id: {event['id']} - {event['name']} - {event['description']}"
               message += f" Để biết thêm thông tin chi tiết sự kiện, vui lòng cung cấp cho chúng tôi biết id của sự kiện đó nhé!"
               dispatcher.utter_message(text=message)
           else:

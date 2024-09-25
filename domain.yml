@@ -9,6 +9,20 @@ intents:
   - get_event_by_id:
       use_entities: 
         - event_id
+  - greet
+  - goodbye
+  - ask_about_system
+  - ask_how_to_buy
+responses:
+  utter_greet:
+  - text: "Xin chào bạn nhé!"
+  utter_goodbye:
+  - text: "Tạm biệt bạn! Cảm ơn bạn đã quan tâm. Nếu có thắc mắc gì thêm, đừng ngần ngại hỏi mình nhé!"
+  utter_ask_about_system:
+  - text: "Đây là sản phẩm của Tường, Ái, Thùy, Như, Lam."
+  utter_ask_how_to_buy:
+  - text: "Để mua hàng, bạn chỉ cần chọn sản phẩm, thêm vào giỏ hàng và thanh toán (Nhớ là phải đăng nhập vào tài khoản bạn nhé!)."
+
 entities:
   - event_id
 
@@ -26,6 +40,10 @@ actions:
   - action_fetch_products_current
   - action_fetch_products_upcoming
   - action_fetch_sales_event_by_id
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_about_system
+  - utter_ask_how_to_buy
 
 session_config:
   session_expiration_time: 60
